@@ -11,7 +11,8 @@ namespace WorshipManager.Models
     public class ApplicationUser : IdentityUser
     {
         public string Type { get; set; }
-        public ICollection<Service> Services { get; set; }
+        
+        public ICollection<ServiceUser> Services { get; set; }
 
         public async Task<ClaimsIdentity> GenerateUserIdentityAsync(UserManager<ApplicationUser> manager)
         {
@@ -24,6 +25,10 @@ namespace WorshipManager.Models
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
+
+        public IDbSet<Song> Songs { get; set; }
+        public IDbSet<Service> Services { get; set; }
+
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {

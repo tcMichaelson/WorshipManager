@@ -8,7 +8,8 @@ namespace WorshipManager.Models {
         public int Id { get; set; }
         public string Title { get; set; }
         public DateTime ServiceDate { get; set; }
-        public ICollection<Song> Songs { get; set; }
-        public ICollection<ApplicationUser> User { get; set; }
+        
+        public ICollection<ServiceSong> Songs { get; set; }
+        public ICollection<ServiceUser> User { get; set; }
     }
 }
