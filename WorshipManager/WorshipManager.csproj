@@ -196,14 +196,15 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\ServicesController.cs" />
+    <Compile Include="Controllers\SongsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Infrastructure\IRepository.cs" />
     <Compile Include="Infrastructure\Repository.cs" />
-    <Compile Include="Migrations\201512021703177_initial.cs" />
-    <Compile Include="Migrations\201512021703177_initial.Designer.cs">
-      <DependentUpon>201512021703177_initial.cs</DependentUpon>
+    <Compile Include="Migrations\201512021837005_initial.cs" />
+    <Compile Include="Migrations\201512021837005_initial.Designer.cs">
+      <DependentUpon>201512021837005_initial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -271,10 +272,11 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Services\Create.cshtml" />
+    <Content Include="Views\Songs\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Services\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -285,8 +287,8 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201512021703177_initial.resx">
-      <DependentUpon>201512021703177_initial.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201512021837005_initial.resx">
+      <DependentUpon>201512021837005_initial.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

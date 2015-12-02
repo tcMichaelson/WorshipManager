@@ -2,11 +2,23 @@
     ViewBag.Title = "Home Page";
 }
 
-<div>
-    <form class="form-group">
-        <button class="form-control btn btn-default col-md-3">New Service</button>
-        <button class="form-control btn btn-default col-md-3">Past Services</button>
-        <button class="form-control btn btn-default col-md-3">Songs</button>
-        <button class="form-control btn btn-default col-md-3">Members</button>
+    <form class="form-group col-md-4 col-md-offset-4">
+        <a class="form-control btn btn-default col-md-3" href="/Services/Create">New Service</a>
+        <a class="form-control btn btn-default col-md-3">Past Services</a>
+        <a class="form-control btn btn-default col-md-3">Songs</a>
+        <a class="form-control btn btn-default col-md-3">Members</a>
     </form>
-</div>
+
+<style>
+    * {
+        outline: 1px solid red;
+    }
+
+    body {
+        background-color: lightblue;
+    }
+
+    .container.body-content {
+        background-color: white;
+    }
+</style>

@@ -13,7 +13,7 @@ namespace WorshipManager.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "201512021703177_initial"; }
+            get { return "201512021837005_initial"; }
         }
         
         string IMigrationMetadata.Source

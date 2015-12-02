@@ -61,6 +61,7 @@ namespace WorshipManager.Migrations
                         Id = c.Int(nullable: false, identity: true),
                         Name = c.String(),
                         Author = c.String(),
+                        Lyrics = c.String(),
                     })
                 .PrimaryKey(t => t.Id);
             
